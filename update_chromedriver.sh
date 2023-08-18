@@ -26,10 +26,10 @@ curl $chromedriver_to_be_downloaded > chromedriver64
 
 unzip chromedriver64
 
-mv -f chromedriver-mac-x64/chromedriver $dir_installation/
+mv -f chromedriver-$platform/chromedriver $dir_installation/
 
 rm chromedriver64 json_chrom_test.json
-rm -rf chromedriver-mac-x64
+rm -rf chromedriver-$platform
 
 chromedriver -v
 echo "Done!"
