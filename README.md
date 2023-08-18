@@ -28,3 +28,7 @@ chmod u+x update-chromedriver/chromedriver-updator.sh
 ```
 update-chromedriver/chromedriver-updator.sh
 ```
+
+## Report issues
+
+Feel free to create issues when you faced it.
