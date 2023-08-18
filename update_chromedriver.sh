@@ -17,10 +17,6 @@ if [ "$(uname)" == "Darwin" ]; then
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     g_chrome_version=$(google-chome --version | awk '{print $3}')
     platform='linux64'
-# elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
-#     platform='win32'
-# elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW64_NT" ]; then
-#     platform='win32'
 fi
 # before chrome 115
 # chromedriver_to_be_downloaded="https://chromedriver.storage.googleapis.com/113.0.5845.96/chromedriver_mac64.zip"
