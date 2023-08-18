@@ -21,10 +21,10 @@ git clone https://github.com/KiotoJ/update-chromedriver.git
 
 ## Make it executable
 ```
-chmod u+x update-chromedriver/update_chromedriver.sh
+chmod u+x update-chromedriver/chromedriver-updator.sh
 ```
 
 ## Launch it
 ```
-update-chromedriver/update_chromedriver.sh
+update-chromedriver/chromedriver-updator.sh
 ```
