@@ -16,15 +16,15 @@ apt-get install jq
 ## How to use it
 
 ```
-git clone git@github.com:KiotoJ/update-chromedriver.git
+git clone https://github.com/KiotoJ/update-chromedriver.git
 ```
 
 ## Make it executable
 ```
-chmod u+x update-chromedriver/update_chromedriver
+chmod u+x update-chromedriver/update_chromedriver.sh
 ```
 
 ## Launch it
 ```
-update-chromedriver/update_chromedriver
+update-chromedriver/update_chromedriver.sh
 ```
