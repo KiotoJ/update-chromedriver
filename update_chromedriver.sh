@@ -2,20 +2,20 @@
 
 set -e
 
-current_chrome_v=$(chromedriver -v | awk '{print $2}')
+# current_chrome_v=$(chromedriver -v | awk '{print $2}')
 dir_installation=$(dirname $(which chromedriver))
 chromedriver_json_test="https://googlechromelabs.github.io/chrome-for-testing/last-known-good-versions-with-downloads.json"
 curl $chromedriver_json_test > json_chrom_test.json
 platform=''
 if [ "$(uname)" == "Darwin" ]; then
-    g_chrome_version=$(/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version | awk '{print $3}')
+    # g_chrome_version=$(/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version | awk '{print $3}')
     if [ "$(uname -m)" == 'x86_64' ]; then
       platform='mac-x64'
     elif [ "$(uname -m)" == 'arm64' ]; then
       platform='mac_arm64'
     fi
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
-    g_chrome_version=$(google-chome --version | awk '{print $3}')
+    # g_chrome_version=$(google-chome --version | awk '{print $3}')
     platform='linux64'
 fi
 # before chrome 115

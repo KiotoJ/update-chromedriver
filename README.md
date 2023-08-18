@@ -1,3 +1,3 @@
-This script is for updating chromedriver according to the google chrome version
+This script is for updating chromedriver to the latest version
 
 ## How to run it
