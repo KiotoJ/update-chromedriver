@@ -12,7 +12,7 @@ if [ "$(uname)" == "Darwin" ]; then
     if [ "$(uname -m)" == 'x86_64' ]; then
       platform='mac-x64'
     elif [ "$(uname -m)" == 'arm64' ]; then
-      platform='mac_arm64'
+      platform='mac-arm64'
     fi
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     # g_chrome_version=$(google-chome --version | awk '{print $3}')
